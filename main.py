@@ -3,7 +3,7 @@
 """
 Created on Sun Jul 29 15:25:17 2018
 
-@author: eliza
+@author: krishna
 """
 import json
 import os
@@ -28,10 +28,10 @@ def calculate(dl,keyCount,dB):
         cnt=0
         for v in value:
             if v !=pythCheck and v:
-                dep= [x for x in os.listdir('/home/eliza/anaconda3/pkgs') 
+                dep= [x for x in os.listdir('/home/krishna/anaconda3/pkgs') 
                 if x.startswith(v[0:2])]    
                 depi=[lst for lst in dep if not lst.endswith('bz2')]
-                with open ("/home/eliza/anaconda3/pkgs/{}/info/index.json"
+                with open ("/home/krishna/anaconda3/pkgs/{}/info/index.json"
                        .format(depi[0])) as f:
                     lis=json.load(f)["depends"]
                  
@@ -139,20 +139,20 @@ def releaseSupplyChainMatrix(depenDict):
     dateDict={}
     versionDic={}
     for key in depenDict.keys():
-        dep= [x for x in os.listdir('/home/eliza/anaconda3/pkgs') 
+        dep= [x for x in os.listdir('/home/krishna/anaconda3/pkgs') 
                 if x.startswith(key[0:3])] 
         depi=[lst for lst in dep if not lst.endswith('bz2')]
-        with open ("/home/eliza/anaconda3/pkgs/{}/info/index.json"
+        with open ("/home/krishna/anaconda3/pkgs/{}/info/index.json"
                        .format(depi[0])) as f:
             lis=json.load(f)["version"]
         versionDic[key]=lis
-        dep= [x for x in os.listdir('/home/eliza/anaconda3/pkgs/{}/info'
+        dep= [x for x in os.listdir('/home/krishna/anaconda3/pkgs/{}/info'
                                     .format(depi[0])) 
                 if x.startswith('LICENSE')] 
         
         if len(dep)!=0:
         
-            with open("/home/eliza/anaconda3/pkgs/{}/info/LICENSE.txt"
+            with open("/home/krishna/anaconda3/pkgs/{}/info/LICENSE.txt"
                            .format(depi[0]), encoding="utf-8") as fs:
                 for line in fs:
                     match = re.search(r'\d\d\d\d+.?\d*', line)
