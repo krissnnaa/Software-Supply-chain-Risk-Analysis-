@@ -12,8 +12,8 @@ pyFilesPath = glob2.glob('/home/krishna/Desktop/fall 2018-19/Research/ipythonPro
 # Reading the libraries from each of the python files
 firstTierList=[]
 pyFilesPath.remove("/home/krishna/Desktop/fall 2018-19/Research/ipythonProject/ipython/IPython/core/tests/nonascii.py")
-for file in pyFilesPath:
-    with open(file) as fs:
+for files in pyFilesPath:
+    with open(files) as fs:
                 for line in fs:
                     if len(line)>=2:                      
                         match = line.split(' ')[0]                       
