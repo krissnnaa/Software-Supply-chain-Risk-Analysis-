@@ -6,7 +6,7 @@ pygments
 nose
 cython
 setupext
-OpenGL
+OpenGL (Replace it with GliPy)
 pickleshare
 gh_api
 requests
