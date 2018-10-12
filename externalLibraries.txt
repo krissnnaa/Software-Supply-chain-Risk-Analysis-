@@ -1,5 +1,3 @@
-ipykernel
-ipyparallel
 matplotlib
 pygtk
 backcall
@@ -10,14 +8,13 @@ cython
 setupext
 OpenGL
 pickleshare
-jupyter_client
 gh_api
 requests
 prompt_toolkit
 pexpect
 simplegeneric
 sphinx
-System
+System######
 wx
 clr
 pyglet
