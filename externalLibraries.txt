@@ -1,20 +1,16 @@
 matplotlib
 pygtk
 backcall
-setupbase
 pygments
 nose
 cython
-setupext
-OpenGL (Replace it with GliPy)
+GliPy
 pickleshare
-gh_api
 requests
 prompt_toolkit
 pexpect
 simplegeneric
 sphinx
-System######
 wx
 clr
 pyglet
@@ -23,12 +19,8 @@ apigen
 glob2
 docutils
 decorator
-_tkinter
 PyQt4
-toollib
 setuptools
 numpy
 gtk
-gi
-testpath
 wcwidth
