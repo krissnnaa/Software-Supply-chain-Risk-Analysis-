@@ -8,7 +8,7 @@ pygments
 nose
 cython
 setupext
-OpenGL
+OpenGL (Replace it with GliPy)
 pickleshare
 jupyter_client
 gh_api
