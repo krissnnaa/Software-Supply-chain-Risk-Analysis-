@@ -88,6 +88,11 @@ for item in standardList:
 finalStandardList = list(set(finalStandardList))
 finalExternalList=[item for item in externalList if item not in finalStandardList]
 
+# Writing final list of first-tier into file
+with open("firstExternalLibraries.txt", "w") as f:
+    for item in finalExternalList:
+f.write("%s\n" % item)
+
 # Creating a list of path for each python file
 pyFilesPathSec = glob2.glob('/home/krishna/Desktop/fall 2018-19/Research/ipython-secondTier/**/*.py')
 pyFilesPathSec.remove("/home/krishna/Desktop/fall 2018-19/Research/ipython-secondTier/wxPython-master/demo/OGL.py")
