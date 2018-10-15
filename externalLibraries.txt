@@ -4,7 +4,7 @@ backcall
 pygments
 nose
 cython
-GliPy
+pyopengl
 pickleshare
 requests
 prompt_toolkit
