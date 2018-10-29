@@ -1,0 +1,11 @@
+babel
+estraverse
+zrender
+rollup
+commander
+glob
+escodegen
+fs-extra
+esprima
+coordtransform
+assert
