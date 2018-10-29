@@ -1,0 +1,17 @@
+@babel/template
+estraverse
+zrender
+@babel/helper-module-transforms
+rollup
+commander
+glob
+@babel/types
+escodegen
+fs-extra
+@babel/helper-simple-access
+esprima
+coordtransform
+rollup-plugin-uglify
+assert
+@babel/core
+rollup-plugin-node-resolve
